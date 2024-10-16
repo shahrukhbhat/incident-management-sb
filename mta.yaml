@@ -59,6 +59,7 @@ modules:
       instance:
         destinations:
         - Name: incidents_incident_management_sb_html5_repo_host
+          ServiceInstanceName: incident-management-sb-html5-repo-host
           ServiceKeyName: incident-management-sb-html5-repo-host-key
           sap.cloud.service: incidents
         - Authentication: OAuth2UserTokenExchange
@@ -95,7 +96,7 @@ resources:
   parameters:
     config:
       tenant-mode: dedicated
-      xsappname: incident-management-sb-${org}-${space}
+      xsappname: incident-management-sb-${space}
     path: ./xs-security.json
     service: xsuaa
     service-plan: application
