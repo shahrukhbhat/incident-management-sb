@@ -9,6 +9,7 @@ modules:
   requires:
   - name: incident-management-sb-db
   - name: incident-management-sb-auth
+  - name: incident-management-sb-destination-service
   provides:
   - name: srv-api
     properties:
